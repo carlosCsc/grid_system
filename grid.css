@@ -1,0 +1,87 @@
+/* reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* container */
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+    @media (min-width: 1050px) {
+        .container {
+            max-width: 1050px;
+            padding: 0;
+        }
+    }
+
+/* linha base do site, elimina o padding dos primeiros elementos das laterais */
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.col {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: -4px;
+    width: 100%;
+    *zoom: 1;
+    *display: inline;
+}
+    /* duas colunas */
+    @media (min-width: 480px) {
+        .col-2 {
+            width: 50%;
+        }
+    }
+
+    /* três colunas */
+    @media (min-width: 992px) {
+        .col-3 {
+            width: 33.3333%;
+        }
+    }
+
+    /* quatro colunas */
+    @media (min-width: 480px) {
+        .col-4 {
+            width: 50%;
+        }
+    }
+    @media (min-width: 992px) {
+        .col-4 {
+            width: 25%;
+        }
+    }
+
+
+/* tags para testar o layout, pode apagar do projeto */
+.gray {
+    background: #f5d5fe;
+    padding: 5px;
+    text-align: center;
+    margin: 5px 0;
+    font-family: arial;
+    font-size: .6em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+@media (min-width: 992px) {
+    .gray {
+        margin: 0;
+    }
+}
+.margin-top {
+    margin-top: 15px;
+}
