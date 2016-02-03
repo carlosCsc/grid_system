@@ -3,85 +3,85 @@
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
-/* container */
-.container {
+/* conteiner */
+.container  {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
 }
-    @media (min-width: 1050px) {
+    @media (min-width: 1170px) {
         .container {
-            max-width: 1050px;
+            max-width: 1170px;
             padding: 0;
         }
     }
 
-/* linha base do site, elimina o padding dos primeiros elementos das laterais */
+/* linha */
 .row {
     margin-left: -5px;
     margin-right: -5px;
 }
+    .row:before,
+    .row:after {
+        content: "";
+        display: table;
+    }
+    .row:after {
+        clear: both;
+    }
 
+/* colunas */
 .col {
     display: inline-block;
     vertical-align: top;
     min-height: 1px;
     padding-left: 5px;
     padding-right: 5px;
-    margin-right: -4px;
     width: 100%;
+    margin-right: -4px;
     *zoom: 1;
     *display: inline;
 }
-    /* duas colunas */
+    /* duas colonas */
     @media (min-width: 480px) {
         .col-2 {
             width: 50%;
         }
     }
 
-    /* três colunas */
-    @media (min-width: 992px) {
+    /* tres colunas */
+    @media (min-width: 728px) {
         .col-3 {
             width: 33.3333%;
         }
     }
 
-    /* quatro colunas */
-    @media (min-width: 480px) {
-        .col-4 {
-            width: 50%;
-        }
-    }
+    /* sidebar */
     @media (min-width: 992px) {
-        .col-4 {
-            width: 25%;
+        .col-content {
+            width: 60%;
+        }
+
+        .col-sidebar {
+           width: 40%;
         }
     }
 
 
-/* tags para testar o layout, pode apagar do projeto */
-.gray {
+/* USAR APENAS PARA DEMOSTRAÇÂO */
+.teste {
     background: #f5d5fe;
     padding: 5px;
     text-align: center;
-    margin: 5px 0;
-    font-family: arial;
-    font-size: .6em;
-    font-weight: 600;
+    margin: 2px 0;
     color: #fff;
-    text-transform: uppercase;
 }
-@media (min-width: 992px) {
-    .gray {
-        margin: 0;
-    }
+.big {
+    height: 50px;
 }
-.margin-top {
-    margin-top: 15px;
-}
+
